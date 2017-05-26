@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Aplicacion Web de JQuery Mobile</title>
+
+
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css" />
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+
+
+<!--
+<link rel="stylesheet" href="themes/monica.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+-->
+
+</head>
+
+<body>
+<!--Inicia la pagina principal-->
+<div data-role="page" id="home" data-theme="c">
+  <div data-role="header" data-theme="b">
+    <h1>JQuery Mobile</h1>
+  </div>
+  <div data-role="content"><a href="#" data-role="button"><img src="images/jquery-logo.png" width="80%" /></a>
+
+
+
+  <ul data-role="listview" data-inset="true">
+      <li><a href="#phonegap">PhoneGap</a><a href="#phonegap">Bloque que puede contraerse</a></li>
+      <li><a href="#jquery">JQuery</a><a href="#jquery">JQuery Mobile.</a></li>
+      <li><a href="#formulario">Regístrate</a><a href="#formulario">Formulario</a></li>
+      <li><a href="#contacto">Contactos</a><a href="#contacto">Filtros</a></li>
+    </ul> 
+  </div>
+   
+  <div data-role="footer" data-position="fixed" data-id="footerPpal" data-theme="b">
+    <div data-role="navbar">
+    <ul>
+    <li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#ventana" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+  </div>
+  
+  
+  </div>
+
+<!--Inicia pagina de phonegap-->
+<div data-role="page" id="phonegap">
+<div data-role="header">
+    <h1>PhoneGap</h1>
+  </div>
+<div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>PhoneGap maneja APIs</h3>
+        <p align="justify">Permiten tener acceso a elementos como el acelerómetro, la cámara, los contactos en el dispositivo, la red, el almacenamiento, las notificaciones, etc. Estas API se conectan al sistema operativo usando el código nativo del sistema huésped a través de una Interfaz de funciones foráneas en Javascript.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Permite el Desarrollo</h3>
+        <p align="justify"> Ya sea ejecutando las aplicaciones en nuestro navegador web, sin tener que utilizar un simulador dedicado a esta tarea, y brinda la posibilidad de soportar funciones sobre frameworks como Sencha Touch o JQuery Mobile.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Distribución de Apache Cordova</h3>
+        <p align="justify">La aplicación se llamó en un principio "PhoneGap", y posteriormente "Apache Callback". Ambos sistemas tienen funciones casi idénticas, la diferencia principal entre Apache Cordova y Phonegap es que el segundo tiene acceso a servicios de compilación en la nube proporcionados por Adobe Creative Cloud.</p>
+      </div>
+    </div>
+  
+  </div>
+  
+<div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar">
+    <ul>
+    <li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#ventana" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+</div>
+</div>
+
+<!--Cuadro de dialogo de mas información-->
+<div data-role="page" id="ventana">
+  <div data-role="header">
+    <h1>Mas Información</h1>
+  </div>
+  <div data-role="content">
+  <p align="center">Creado por Mónica Olivarria</p>
+  <p align="center">Mayo de 2017</p>
+    <div data-role="controlgroup" data-type="horizontal" align="center">
+    <a href="#" data-rel="back" data-role="button">Aceptar</a>   
+    <a href="#" data-rel="back" data-role="button">Cancelar</a></div>
+  
+  </div>
+</div>
+
+
+<!--inicia formulario-->
+<div data-role="page" id="formulario">
+  <div data-role="header">
+    <h1>Registro</h1>
+  </div>
+  <div data-role="content">
+    <div data-role="fieldcontain">
+      <label for="textinput">Nombre:</label>
+      <input type="text" name="textinput" id="textinput" value="" placeholder="Nombres"  />
+      <div data-role="fieldcontain">
+        <label for="textinput2">Apellidos:</label>
+        <input type="text" name="textinput2" id="textinput2" value=""  placeholder="Apellido Paterno" />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="textinput3"></label>
+        <input type="text" name="textinput3" id="textinput3" value="" placeholder="Apellido Materno" />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="slider">Edad:</label>
+        <input type="range" name="slider" id="slider" value="0" min="1" max="100" />
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Sexo</legend>
+          <input type="radio" name="sexo" id="sexo_0" value="" />
+          <label for="sexo_0">Masculino</label>
+          <input type="radio" name="sexo" id="sexo_1" value="" />
+          <label for="sexo_1">Femenino</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <legend>Aficiones:</legend>
+          <input type="checkbox" name="checkbox1" id="checkbox1_0" class="custom" value="" />
+          <label for="checkbox1_0">Escuchar Música</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1_1" class="custom" value="" />
+          <label for="checkbox1_1">Ir al Cine</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1_2" class="custom" value="" />
+          <label for="checkbox1_2">Practicar algún Deporte</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="email">e-mail:</label>
+        <input type="email" name="email" id="email" value="" placeholder="ejemplo@email.com"  />
+      </div>
+    <div data-role="fieldcontain">
+      <label for="date">Cumpleaños:</label>
+      <input type="date" name="date" id="date" value=""  />
+    </div>
+      
+      
+      
+      <div align="center" data-role="controlgroup" data-type="horizontal">
+      <a href="#formulario" data-role="button">Enviar</a>
+      <a href="#home" data-role="button">Cancelar</a></div>
+      
+      
+      </div>
+      
+    </div>
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+        <div data-role="navbar">
+        <ul>
+        <li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+        <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+        <li><a href="#ventana" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+        <li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<!--inicia pagina de jquery-->
+<div data-role="page" id="jquery">
+  <div data-role="header">
+    <h1>JQuery Mobile</h1>
+  </div>
+  <div data-role="content">
+      <div data-role="collapsible">
+        <h3>¿Qué es?</h3>
+        <p>es una biblioteca de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web. </p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Historia</h3>
+        <p>Fue presentada el 14 de enero de 2006 en el BarCamp NYC. jQuery es la biblioteca de JavaScript más utilizada.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Características</h3>
+        <ul data-role="listview">
+          <li>Manipulación de la hoja de estilos CSS</li>
+          <li>Efectos y Animaciones.</a></li>
+          <li>Soporta Extensiones</a></li>
+        </ul>
+
+      </div>
+  </div>
+  	
+  
+<div data-role="footer" data-position="fixed" data-id="footerPpal">
+        <div data-role="navbar">
+        <ul>
+        <li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+        <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+        <li><a href="#ventana" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+        <li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    
+<!--Inicia pagina de contactos-->    
+<div data-role="page" id="contacto">
+  <div data-role="header">
+    <h1>Contactos</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-inset="true">
+      <li><a href="#"><img src="images/ferrioni.png" height="40" />
+        <h3>Mónica Olivarría</h3>
+        <p>Docente de la Facultad de Informática</p>
+      </a></li>
+      <li><a href="#"><img src="images/ferrioni.png" height="40" />
+        <h3>Francisco Audelo</h3>
+        <p>Alumno de la Facultad de Informática</p>
+      </a></li>
+      <li><a href="#"><img src="images/ferrioni.png" height="40" />
+        <h3>Jahaziel Bergez</h3>
+        <p>Alumno de la Facultad de Informática</p>
+      </a></li>
+      <li><a href="#"><img src="images/ferrioni.png" height="40" />
+        <h3>José Caride</h3>
+        <p>Alumno de la Facultad de Informática</p>
+      </a></li>
+      <li><a href="#"><img src="images/ferrioni.png" height="40" />
+        <h3>Lucero León</h3>
+        <p>Alumno de la Facultad de Informática</p>
+      </a></li>
+    </ul>
+  </div>
+  
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar">
+    <ul>
+    <li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#ventana" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.jquery2017"
+    version   = "1.0.0">
+
+<name>JQuery Mobile</name>
+
+<description>
+App con información sobre PhoneGap y JQuery 2017</description>
+
+<author href="https://example.com" email="you@example.com">
+Mónica Olivarría
+</author>
+
+<icon src="images/jquerymobile.png" gap:density="ldpi" gap:platform="android" />
+<icon src="images/jquerymobile.png" gap:density="mdpi" gap:platform="android" />
+<icon src="images/jquerymobile.png" gap:density="hdpi" gap:platform="android" />
+<icon src="images/jquerymobile.png" gap:density="xhdpi" gap:platform="android" />
+</widget>
